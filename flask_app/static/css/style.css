@@ -1,0 +1,28 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    height: auto;
+    width: 100%;
+}
+
+.profile_image {
+    height: 300px;
+    max-width: 100%;
+    border: 2px solid black;
+}
+
+.name_text {
+    font-size: 65px;
+    font-family: 'Dancing Script', cursive;
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+.career_text {
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+
