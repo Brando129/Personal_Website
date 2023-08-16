@@ -7,23 +7,26 @@
 .header {
     height: auto;
     width: 100%;
+    background-color: black;
+    border-bottom: 2px solid whitesmoke;
 }
 
 .profile_image {
     height: 300px;
     max-width: 100%;
-    border: 2px solid black;
+    border: 2px solid whitesmoke;
 }
 
 .name_text {
     font-size: 65px;
     font-family: 'Dancing Script', cursive;
-    /* font-family: 'Roboto', sans-serif; */
+    color: whitesmoke;
 }
 
 .career_text {
     font-size: 25px;
     font-family: 'Roboto', sans-serif;
+    color: whitesmoke;
 }
 
 .project_image {
@@ -32,6 +35,24 @@
     border: 2px solid black;
 }
 
+.icons {
+    height: 30px;
+    max-width: 100%;
+}
+
 .links {
     text-decoration: none;
+}
+
+.list {
+    list-style-type: none;
+}
+
+.dev_info {
+    background-color: black;
+    border-top: 2px solid whitesmoke;
+}
+
+.footer_info {
+    background-color: black;
 }
