@@ -38,6 +38,7 @@
 .icons {
     height: 30px;
     max-width: 100%;
+    margin: 5px;
 }
 
 .links {
@@ -59,4 +60,16 @@
 
 .project_card {
     margin-bottom: 25px;
+}
+
+.contact_text {
+    margin-top: 15px;
+}
+
+.card.card_height {
+    height: 400px;
+}
+
+.ssc {
+    margin-top: 20px;
 }
