@@ -29,9 +29,16 @@
     color: whitesmoke;
 }
 
+.about_text {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: whitesmoke;
+}
+
 .project_image {
     height: 200px;
     max-width: 100%;
+    margin-bottom: 10px;
     border: 2px solid black;
 }
 
