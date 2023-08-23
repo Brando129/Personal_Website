@@ -21,3 +21,8 @@ function pause_game_vault() {
     game_vault.pause();
 }
 // End of Play Game Vault
+
+// Hover event
+function scale(element, value) {
+    element.style.transform = "scale(" + value + ")";
+}

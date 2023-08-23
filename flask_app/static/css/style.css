@@ -45,6 +45,7 @@
     height: 200px;
     max-width: 90%;
     margin-bottom: 10px;
+    border-radius: 10px;
     border: 2px solid black;
 }
 
@@ -154,4 +155,9 @@
 /* Border Bottom */
 .b-bord {
     border-bottom: 2px solid whitesmoke;
+}
+
+/* Onmouseover transition time */
+div {
+    transition: 500ms;
 }
