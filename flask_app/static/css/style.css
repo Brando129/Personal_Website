@@ -4,6 +4,7 @@
     padding: 0;
 }
 
+/* Header */
 .header {
     height: auto;
     width: 100%;
@@ -11,93 +12,146 @@
     border-bottom: 2px solid whitesmoke;
 }
 
+/* Profile Picture */
 .profile_image {
     height: 300px;
     max-width: 100%;
     border: 2px solid whitesmoke;
 }
 
+/* Name Text */
 .name_text {
     font-size: 65px;
     font-family: 'Dancing Script', cursive;
     color: whitesmoke;
 }
 
+/* Career Tect */
 .career_text {
     font-size: 25px;
     font-family: 'Roboto', sans-serif;
     color: whitesmoke;
 }
 
+/* About Text */
 .about_text {
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
     color: whitesmoke;
 }
 
+/* Project Image */
 .project_image {
     height: 200px;
-    max-width: 100%;
+    max-width: 90%;
     margin-bottom: 10px;
     border: 2px solid black;
 }
 
+/* Icon Images */
 .icons {
     height: 30px;
     max-width: 100%;
     margin: 5px;
 }
 
+/* Links */
 .links {
     text-decoration: none;
 }
 
+/* Lists */
 .list {
     list-style-type: none;
 }
 
+/* Dev Info */
 .dev_info {
     background-color: black;
     border-top: 2px solid whitesmoke;
 }
 
+/* Footer */
 .footer_info {
     background-color: black;
 }
 
+/* Project Card */
 .project_card {
     margin-bottom: 25px;
 }
 
+/* Contact Text */
 .contact_text {
     margin-top: 15px;
 }
 
+/* Card Height */
 .card.card_height {
     height: 400px;
 }
 
+/* Software/Skills/Contact */
 .ssc {
     margin-top: 20px;
 }
 
+/* Homepage background */
 .fixed-bg {
     /* The background image */
     background-image: url("/static/img/tech_background.png");
-  
+
     /* Set a specified height, or the minimum height for the background image */
     min-height: 500px;
-  
+
     /* Set background image to fixed (don't scroll along with the page) */
     background-attachment: fixed;
-  
+
     /* Center the background image */
     background-position: center;
-  
+
     /* Set the background image to no repeat */
     background-repeat: no-repeat;
-  
+
     /* Scale the background image to be as large as possible */
     background-size: cover;
-  }
-  
+}
+
+/* View Project background */
+.fixed-bg-two {
+    /* The background image */
+    background-image: linear-gradient(to bottom right, darkred, black);
+
+    /* Set a specified height, or the minimum height for the background image */
+    min-height: 500px;
+
+    /* Set background image to fixed (don't scroll along with the page) */
+    background-attachment: fixed;
+
+    /* Center the background image */
+    background-position: center;
+
+    /* Set the background image to no repeat */
+    background-repeat: no-repeat;
+
+    /* Scale the background image to be as large as possible */
+    background-size: cover;
+}
+
+/* Video size */
+.video {
+    height: 500px;
+    width: 100%;
+}
+
+/* Project Name */
+.project_name {
+    font-size: 60px;
+    font-family: 'Roboto', sans-serif;
+    color: whitesmoke;
+}
+
+/* Border Bottom */
+.b-bord {
+    border-bottom: 2px solid whitesmoke;
+}
