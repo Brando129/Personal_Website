@@ -137,6 +137,7 @@
 }
 
 /* Onmouseover transition time */
-div {
-    transition: 500ms;
+div,
+img {
+    transition: 600ms;
 }
