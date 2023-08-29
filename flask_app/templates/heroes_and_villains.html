@@ -19,12 +19,10 @@
     <div class="col-12">
         <!-- Project Content -->
         <div class="flex-column justify-content-center align-items-center mask" style="background-color: rgba(0, 0, 0, 0.6)">
-            <p class="project_name text-center bg-black my-0 p-2">Heroes and Villains</p>
-            <div class="d-flex justify-content-center bg-black p-3 b-bord">
-                <button class="btn btn-danger mx-5" onclick="play_h_and_v()" type="button">Play</button>
-                <button class="btn btn-danger mx-5" onclick="pause_h_and_v()" type="button">Pause</button>
-            </div>
-            <video id="h_and_v" class="video p-3 my-3" src="/static/video/heroes_and_villains.mp4"></video>
+            <p class="project_name text-center bg-black my-0 p-2 b-bord">Heroes and Villains</p>
+            <video width="100%" height="500px" id="game_vault" class="video p-3 my-3" controls="controls">
+                <source src="/static/video/heroes_and_villains.mp4" type="video/mp4" />
+            </video>
         </div>
         <!-- End of Project Content -->
         <!-- Software/Skills/Contact -->

@@ -26,3 +26,8 @@ def clock():
 @app.get('/calculator')
 def calculator():
     return render_template('calculator.html')
+
+# Route for rendering the The Wall page.
+@app.get('/wall')
+def wall():
+    return render_template('wall.html')
