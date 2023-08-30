@@ -31,3 +31,13 @@ def calculator():
 @app.get('/wall')
 def wall():
     return render_template('wall.html')
+
+# Route for rendering the Recipes page.
+@app.get('/recipes')
+def recipes():
+    return render_template('recipes.html')
+
+# Route for rendering the Recipes page.
+@app.get('/ohana')
+def ohana():
+    return render_template('ohana.html')
