@@ -141,3 +141,10 @@ div,
 img {
     transition: 600ms;
 }
+
+/* Code link */
+.code_link {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: orange;
+}

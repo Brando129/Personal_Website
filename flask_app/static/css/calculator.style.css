@@ -1,9 +1,11 @@
+/* Container */
 .zone {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+/* Calculator */
 #calculator {
     display: flex-block;
     height: 415px;
@@ -14,6 +16,7 @@
     margin-top: 20px;
 }
 
+/* Display */
 #display {
     display: flex;
     align-items: center;
@@ -26,6 +29,7 @@
     margin-right: 15px;
 }
 
+/* Row */
 .line {
     display: flex;
     align-items: center;
@@ -33,6 +37,7 @@
     margin: 16px 10px;
 }
 
+/* Number/letter/period buttons */
 button.b {
     height: 50px;
     width: 50px;
@@ -43,6 +48,7 @@ button.b {
     font-size: x-large;
 }
 
+/* Operator button */
 button.o {
     height: 50px;
     width: 50px;
@@ -53,10 +59,11 @@ button.o {
     font-size: x-large;
 }
 
-.operator {
+/* .operator {
     background-color: orange;
-}
+} */
 
+/* Equals button */
 #equals {
     background-color: darkgray;
     width: 250px;
@@ -64,6 +71,7 @@ button.o {
     border-radius: 15px;
 }
 
+/* Fixed background */
 .fixed-bg {
     /* The background image */
     background-image: url("/static/img/tech_background.png");
@@ -156,3 +164,17 @@ div,
 img {
     transition: 600ms;
 }
+
+/* Onhover color change */
+.b:hover {
+    background-color: gainsboro;
+}
+
+.o:hover {
+    background-color: orangered;
+}
+
+#equals:hover {
+    background-color: gainsboro;
+}
+/* End of Onhover color change */

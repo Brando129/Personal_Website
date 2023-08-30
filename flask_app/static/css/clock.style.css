@@ -1,13 +1,20 @@
+/* Clock face */
 #face {
     position: relative;
-    background-color: #f3f3f3;
+    /* background-image: linear-gradient(to bottom right, wheat, gray); */
+    background-image: url('/static/img/handless_clock.png');
+    background-attachment: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 400px;
     height: 400px;
     border-radius: 50%;
-    border: 6px solid black;
+    border: 6px solid white;
     /* margin-left: 36%; */
 }
 
+/* Hands positions */
 #minutes, #hour, #seconds {
     position: absolute;
     left: 50%;
@@ -15,24 +22,28 @@
     transform-origin: top center;
 }
 
+/* Hour hand */
 #hour {
     background-color: black;
     height: 120px;
     width: 8px;
 }
 
+/* Minute hand */
 #minutes {
-    background-color: grey;
+    background-color: black;
     height: 140px;
     width: 4px;
 }
 
+/* Seconds hand */
 #seconds {
     background-color: red;
     height: 155px;
     width: 2px;
 }
 
+/* Page Background */
 .fixed-bg {
     /* The background image */
     background-image: url("/static/img/tech_background.png");
