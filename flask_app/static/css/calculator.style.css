@@ -1,4 +1,4 @@
-.container {
+.zone {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -6,9 +6,10 @@
 
 #calculator {
     display: flex-block;
-    height: 400px;
+    height: 415px;
     width: 250px;
     background-color: black;
+    border: 2px solid gainsboro;
     border-radius: 15px;
     margin-top: 20px;
 }
@@ -25,19 +26,29 @@
     margin-right: 15px;
 }
 
-.row {
+.line {
     display: flex;
     align-items: center;
     justify-content: space-around;
     margin: 16px 10px;
 }
 
-button {
+button.b {
     height: 50px;
     width: 50px;
     border-radius: 50%;
     border: none;
     background-color: slategrey;
+    color: white;
+    font-size: x-large;
+}
+
+button.o {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: orange;
     color: white;
     font-size: x-large;
 }
@@ -51,4 +62,97 @@ button {
     width: 250px;
     height: 50px;
     border-radius: 15px;
+}
+
+.fixed-bg {
+    /* The background image */
+    background-image: url("/static/img/tech_background.png");
+
+    /* Set a specified height, or the minimum height for the background image */
+    min-height: 500px;
+
+    /* Set background image to fixed (don't scroll along with the page) */
+    background-attachment: fixed;
+
+    /* Center the background image */
+    background-position: center;
+
+    /* Set the background image to no repeat */
+    background-repeat: no-repeat;
+
+    /* Scale the background image to be as large as possible */
+    background-size: cover;
+}
+
+/* Career Text */
+.career_text {
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    color: whitesmoke;
+}
+
+/* Icon Images */
+.icons {
+    height: 30px;
+    max-width: 100%;
+    margin: 5px;
+}
+
+/* Links */
+.links {
+    text-decoration: none;
+}
+
+/* Lists */
+.list {
+    list-style-type: none;
+}
+
+/* Dev Info */
+.dev_info {
+    background-color: black;
+    border-top: 2px solid whitesmoke;
+}
+
+/* Footer */
+.footer_info {
+    background-color: black;
+}
+
+/* Project Card */
+.project_card {
+    margin-bottom: 25px;
+}
+
+/* Contact Text */
+.contact_text {
+    margin-top: 15px;
+}
+
+/* Card Height */
+.card.card_height {
+    height: 400px;
+}
+
+/* Software/Skills/Contact */
+.ssc {
+    margin-top: 20px;
+}
+
+/* Project Name */
+.project_name {
+    font-size: 60px;
+    font-family: 'Roboto', sans-serif;
+    color: whitesmoke;
+}
+
+/* Border Bottom */
+.b-bord {
+    border-bottom: 2px solid whitesmoke;
+}
+
+/* Onmouseover transition time */
+div,
+img {
+    transition: 600ms;
 }
