@@ -28,7 +28,7 @@ def calculator():
     return render_template('calculator.html')
 
 # Route for rendering the The Wall page.
-@app.get('/wall')
+# @app.get('/wall')
 # def wall():
 #     return render_template('wall.html')
 
@@ -46,6 +46,7 @@ def calculator():
 @app.get('/view_video')
 def view_video():
     return render_template('view_video.html')
+
 
 # Post Routes
 @app.post('/click/view_video')
