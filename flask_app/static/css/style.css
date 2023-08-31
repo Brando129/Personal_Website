@@ -89,7 +89,7 @@
 
 /* Card Height */
 .card.card_height {
-    height: 400px;
+    height: 420px;
 }
 
 /* Software/Skills/Contact */
@@ -144,6 +144,12 @@ img {
 
 /* Code link */
 .code_link {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: orange;
+}
+
+#link {
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
     color: orange;
