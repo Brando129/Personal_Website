@@ -51,6 +51,6 @@ def view_video():
 # Post Routes
 @app.post('/click/view_video')
 def click_view_video():
-    session['url'] = request.form['file_path']
+    session['file_path'] = request.form['file_path']
     session['project_name'] = request.form['project_name']
     return redirect('/view_video')

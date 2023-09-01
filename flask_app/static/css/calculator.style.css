@@ -120,7 +120,7 @@ button.o {
 /* Dev Info */
 .dev_info {
     background-color: black;
-    border-top: 2px solid whitesmoke;
+    border-top: 4px solid whitesmoke;
 }
 
 /* Footer */
@@ -157,7 +157,7 @@ button.o {
 
 /* Border Bottom */
 .b-bord {
-    border-bottom: 2px solid whitesmoke;
+    border-bottom: 4px solid whitesmoke;
 }
 
 /* Onmouseover transition time */

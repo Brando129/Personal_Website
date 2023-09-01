@@ -9,7 +9,7 @@
     height: auto;
     width: 100%;
     background-color: black;
-    border-bottom: 2px solid whitesmoke;
+    border-bottom: 4px solid whitesmoke;
 }
 
 /* Profile Picture */
@@ -23,6 +23,7 @@
 .name_text {
     font-size: 65px;
     font-family: 'Dancing Script', cursive;
+    /* font-family: 'Caveat'; */
     color: whitesmoke;
 }
 
@@ -46,7 +47,8 @@
     max-width: 90%;
     margin-bottom: 10px;
     border-radius: 10px;
-    border: 2px solid black;
+    border: 2px solid whitesmoke;
+    /* border: 2px solid black; */
 }
 
 /* Icon Images */
@@ -69,7 +71,7 @@
 /* Dev Info */
 .dev_info {
     background-color: black;
-    border-top: 2px solid whitesmoke;
+    border-top: 4px solid whitesmoke;
 }
 
 /* Footer */
@@ -90,6 +92,8 @@
 /* Card Height */
 .card.card_height {
     height: 420px;
+    /* border: 2px solid whitesmoke; */
+    border: 2px solid black;
 }
 
 /* Software/Skills/Contact */
@@ -133,7 +137,7 @@
 
 /* Border Bottom */
 .b-bord {
-    border-bottom: 2px solid whitesmoke;
+    border-bottom: 4px solid whitesmoke;
 }
 
 /* Onmouseover transition time */
