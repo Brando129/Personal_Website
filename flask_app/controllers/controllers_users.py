@@ -59,17 +59,25 @@ def reset():
 #     return render_template('ohana.html')
 
 # Route for rendering the View Videos page.
-@app.get('/view_video')
+@app.get('/view_pictures')
 def view_video():
-    return render_template('view_video.html')
+    return render_template('view_pictures.html')
 
 
 # Post Routes
-@app.post('/click/view_video')
+@app.post('/click/view_pictures')
 def click_view_video():
-    session['file_path'] = request.form['file_path']
+    session['pic_one'] = request.form['pic_one']
+    session['pic_two'] = request.form['pic_two']
+    session['pic_three'] = request.form['pic_three']
+    session['pic_four'] = request.form['pic_four']
+    session['pic_five'] = request.form['pic_five']
+    session['pic_six'] = request.form['pic_six']
+    session['pic_seven'] = request.form['pic_seven']
+    session['pic_eight'] = request.form['pic_eight']
+    session['pic_nine'] = request.form['pic_nine']
     session['project_name'] = request.form['project_name']
-    return redirect('/view_video')
+    return redirect('/view_pictures')
 
 # Route for processing gold and number of moves.
 @app.post('/process_gold')
