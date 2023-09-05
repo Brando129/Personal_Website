@@ -5,24 +5,28 @@
 }
 
 /* Page body */
-body {
+/* body {
     background-image: linear-gradient(red, yellow);
+} */
+
+.card {
+    width: 100%;
 }
 
 /* title */
-.title_txt {
+/* .title_txt {
     text-shadow: 1px 1px gold;
     font-size: 50px;
-}
+} */
 
 /* Card Shadows */
-.card_shadow {
+/* .card_shadow {
     box-shadow: 4px 4px black;
-}
+} */
 
 /* Activity response box */
 .activity {
-    height: 200px;
+    height: 100px;
     overflow-y: hidden;
     background-color: white;
 }
@@ -82,13 +86,6 @@ body {
 /* Contact Text */
 .contact_text {
     margin-top: 15px;
-}
-
-/* Card Height */
-.card.card_height {
-    height: 420px;
-    /* border: 2px solid whitesmoke; */
-    border: 2px solid black;
 }
 
 /* Software/Skills/Contact */

@@ -86,3 +86,15 @@ function calculate() {
     display.innerHTML = res;
 }
 // End of Calculator
+
+// Gold Miner return to scroll position.
+// document.addEventListener("DOMContentLoaded", function (event) {
+//     var scrollpos = localStorage.getItem("scrollpos");
+//     .if (scrollpos) window.scrollTo(0, scrollpos);
+// });
+
+// window.onscroll = function (e) {
+//     localStorage.setItem("scrollpos", window.scrollY);
+// };
+
+//  End of Gold Miner return to scroll postion

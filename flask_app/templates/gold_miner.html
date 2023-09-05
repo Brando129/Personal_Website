@@ -36,54 +36,8 @@
                 </div>
             </div>
             <!-- End of Game Instructions, Gold and Moves Counter -->
-            <!-- Main Row -->
-            <div class="d-flex justify-content-between">
-                <!-- Cards -->
-                <div class="card card_shadow flex-column align-items-center text-center p-5 border border-black">
-                    <div>
-                        <h3 class="mb-4">Farm</h3>
-                        <h5 class="mb-4">(earns 10-20 golds)</h5>
-                    </div>
-                    <form action="/process_gold" method="post">
-                        <input type="hidden" name="property" value="farm">
-                        <input class="btn btn-warning border border-black" type="submit" value="Find Gold!">
-                    </form>
-                </div>
-                <div class="card card_shadow flex-column align-items-center text-center p-5 border border-black">
-                    <div>
-                        <h3 class="mb-4">Cave</h3>
-                        <h5 class="mb-4">(earns 5-10 golds)</h5>
-                    </div>
-                    <form action="/process_gold" method="post">
-                        <input type="hidden" name="property" value="cave">
-                        <input class="btn btn-warning border border-black" type="submit" value="Find Gold!">
-                    </form>
-                </div>
-                <div class="card card_shadow flex-column align-items-center text-center p-5 border border-black">
-                    <div>
-                        <h3 class="mb-4">House</h3>
-                        <h5 class="mb-4">(earns 2-5 golds)</h5>
-                    </div>
-                    <form action="/process_gold" method="post">
-                        <input type="hidden" name="property" value="house">
-                        <input class="btn btn-warning border border-black" type="submit" value="Find Gold!">
-                    </form>
-                </div>
-                <div class="card card_shadow flex-column align-items-center text-center p-5 border border-black">
-                    <div>
-                        <h3 class="mb-4">Casino</h3>
-                        <h5 class="mb-4">(earns/takes 0-50 golds)</h5>
-                    </div>
-                    <form action="/process_gold" method="post">
-                        <input type="hidden" name="property" value="casino">
-                        <input class="btn btn-warning border border-black" type="submit" value="Find Gold!">
-                    </form>
-                </div>
-                <!-- End of Cards -->
-            </div>
-            <!-- End of Main Row -->
             <!-- Container for Winning/Losing and reseting the game -->
-            <div class="text-center my-3">
+            <div class="text-center">
                 {% if session['gold'] >= 225 and session['total_moves'] >= 1 %}
                     <a href="/reset" class="btn btn-success col-4">Winner! Play Again?</a>
                 {% endif %}
@@ -98,17 +52,63 @@
                 {% endif %}
             </div>
             <!-- End of Container for Winning/Losing and reseting the game -->
-            <h4 class="career_text text-center my-3">Activities</h4>
+            <h4 class="career_text text-center my-2">Activities</h4>
             <!-- Activity Log -->
-            <div class="activity card_shadow col-4 border border-black text-center mb-5">
+            <div class="activity card_shadow col-md-6 col-lg-4 border border-black text-center">
                 {% for gold in session.gold_won | reverse %}
                     {% if gold >= 0 %}
-                        <div class="won">You earned {{gold}} gold nuggets!</div>
+                        <div class="won">You earned {{gold}} gold!</div>
                     {% else %}
-                        <div class="lost">You lost {{gold}} gold nuggets!</div>
+                        <div class="lost">You lost {{gold}} gold!</div>
                     {% endif %}
                 {% endfor %}
             </div>
+            <!-- Main Row -->
+            <div class="d-flex flex-wrap my-3">
+                <!-- Cards -->
+                <div class="card flex-column align-items-center text-center p-5 border border-black my-1 col-md-2">
+                    <div>
+                        <h3 class="mb-4">Farm</h3>
+                        <h5 class="mb-4">(earns 10-20 golds)</h5>
+                    </div>
+                    <form action="/process_gold" method="post">
+                        <input type="hidden" name="property" value="farm">
+                        <input class="btn btn-warning border border-black" type="submit" value="Find Gold!">
+                    </form>
+                </div>
+                <div class="card flex-column align-items-center text-center p-5 border border-black my-1 col-md-2">
+                    <div>
+                        <h3 class="mb-4">Cave</h3>
+                        <h5 class="mb-4">(earns 5-10 golds)</h5>
+                    </div>
+                    <form action="/process_gold" method="post">
+                        <input type="hidden" name="property" value="cave">
+                        <input class="btn btn-warning border border-black" type="submit" value="Find Gold!">
+                    </form>
+                </div>
+                <div class="card flex-column align-items-center text-center p-5 border border-black my-1 col-md-2">
+                    <div>
+                        <h3 class="mb-4">House</h3>
+                        <h5 class="mb-4">(earns 2-5 golds)</h5>
+                    </div>
+                    <form action="/process_gold" method="post">
+                        <input type="hidden" name="property" value="house">
+                        <input class="btn btn-warning border border-black" type="submit" value="Find Gold!">
+                    </form>
+                </div>
+                <div class="card flex-column align-items-center text-center p-5 border border-black my-1 col-md-2">
+                    <div>
+                        <h3 class="mb-4">Casino</h3>
+                        <h5 class="mb-4">(earns/takes 0-50 golds)</h5>
+                    </div>
+                    <form action="/process_gold" method="post">
+                        <input type="hidden" name="property" value="casino">
+                        <input class="btn btn-warning border border-black" type="submit" value="Find Gold!">
+                    </form>
+                </div>
+                <!-- End of Cards -->
+            </div>
+            <!-- End of Main Row -->
             <!-- End of Activity Log -->
         </div>
         <!-- End of Container -->
